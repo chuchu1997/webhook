@@ -7,7 +7,7 @@ const port = 4200;
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.get("/webhook/phaohathuy", (req, res) => {
     console.log("THIS CALL");
   const imageName = "tuilanguyencuong/phaohathuy";
   const container = "my-container/phaohathuy";
