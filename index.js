@@ -10,7 +10,7 @@ app.use(express.json());
 app.post("/webhook/phaohathuy", (req, res) => {
     console.log("THIS CALL");
   const imageName = "tuilanguyencuong/phaohathuy";
-  const container = "my-container/phaohathuy";
+  const container = "phaohathuy-container";
 
   const pullImage = `docker pull ${imageName}`;
   const checkExistContainer = `docker ps -a -q -f name=${container}`;
