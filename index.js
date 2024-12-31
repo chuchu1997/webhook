@@ -75,7 +75,7 @@ app.post("/webhook/daydamdui", (req, res) => {
   (
     async () => {
         try {
-            console.log("Excute begin !!");
+            console.log("Excute begin day dam dui !!");
           await excuteCMD(pullImage);
           console.log('Image pulled successfully 1');
           const containerExists = await excuteCMD(checkExistContainer);
